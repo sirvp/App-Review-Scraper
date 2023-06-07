@@ -6,9 +6,9 @@ pipeline {
         sh 'python3 --version'
       }
     }
-    stage('hello') {
+    stage('script') {
       steps {
-        sh 'python3 hello.py'
+        sh 'python3 AppStoreScraper.py'
       }
     }
   }
